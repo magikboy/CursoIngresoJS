@@ -14,5 +14,5 @@ function mostrarAumento()
 
 	resultado2= (num1 + resultado);
 
-	document.getElementById("txtIdResultado").value=resultado2;
+	document.getElementById("txtIdResultado").value=resultado2; //.tofixed(2) para las decimas
 }
