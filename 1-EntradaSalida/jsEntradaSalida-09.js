@@ -6,6 +6,13 @@ en el cuadro de texto "RESULTADO".*/
 //Bosco Mascaro Massimo Ariel Div X
 function mostrarAumento()
 {
+    let num1
 
-	alert("ok");
+    num1 =parseFloat(document.getElementById("txtIdSueldo").value);
+
+	resultado= (num1 * 10 / 100 );
+
+	resultado2= (num1 + resultado);
+
+	document.getElementById("txtIdResultado").value=resultado2;
 }
