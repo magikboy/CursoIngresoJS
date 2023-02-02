@@ -1,8 +1,9 @@
 /*
 Al presionar el  botón, 
-se debe mostrar un mensaje como el siguiente "Esto funciona de maravilla"*/
+se debe mostrar un mensaje como el siguiente "Esto funciona de maravilla"
+Bosco Mascaro Massimo Ariel Div X*/
 function mostrar()
 {
-	alert("Hola Mundo xdxd");
+	alert("esto funciona de ruta");
 }
 
