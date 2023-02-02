@@ -24,7 +24,6 @@ function sumar()
 
 function restar()
 {
-
 	let num1
 
 	let num2
