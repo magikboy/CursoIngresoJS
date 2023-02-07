@@ -12,8 +12,7 @@ function mostrar()
 		alert("usted es mayor de edad");
 	}
 
-
-	if(edad <= 18)
+	else
 	{
 		alert("usted es menor de edad");
 	}	

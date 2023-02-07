@@ -1,6 +1,20 @@
+//Bosco Mascaro Massimo Ariel Div X
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	//declaro edad
+    let edad
 
-}//FIN DE LA FUNCIÓN
+	//tomo edad
+	edad=parseInt(document.getElementById("txtIdEdad").value);
+
+	if(edad >= 13 , edad <= 17  )
+	{
+		alert("usted es adolecente");
+	}
+
+	else
+	{
+		alert("usted no es adolecente");
+	}	
+
+}//FIN DE LA FUNCIÓN		
