@@ -1,4 +1,4 @@
-//Bosco Mascaro Massimo Ariel Div 
+//Bosco Mascaro Massimo Ariel Div X
 function mostrar()
 {
 	//declaro edad
