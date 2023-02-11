@@ -1,3 +1,4 @@
+//Bosco Mascaro Massimo Ariel Div X
 function Sumar () 
 {
     let precio1;
@@ -47,5 +48,5 @@ function PrecioFinal ()
 
     PrecioFinal= (suma + iva )
 
-	alert (PrecioFinal)
+	alert (preciof)
 }
