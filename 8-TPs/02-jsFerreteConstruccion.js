@@ -8,12 +8,14 @@ function Rectangulo ()
 {
   let largo;
   let ancho;
+  let perimetro
   let alambre;
 
   largo=parseInt(document.getElementById("txtIdLargo").value);
   ancho=parseInt(document.getElementById("txtIdAncho").value);
   
-  alambre=(largo+ancho)*3;
+  perimetro=(largo* 2 + ancho * 2);
+  alambre=(perimetro)*3;
 
   alert("Usted tiene que comprar " + alambre + " metros de alambre");
 
@@ -21,11 +23,13 @@ function Rectangulo ()
 function Circulo () 
 {
 	let radio;
-    let alambre;
-
+  let perimetro;
+  let alambre
+ 
     radio=parseInt(document.getElementById("txtIdRadio").value);
 
-    alambre= (radio * 3);
+    perimetro= (2 * 3.14 * radio );
+    alambre = (perimetro * 3)
 
     alert ("Usted tiene que comprar " + alambre + " metros de alambre");
 
@@ -44,9 +48,9 @@ function Materiales ()
   
   m2=(largo * ancho);
 
-  cal= m2 / 3
+  cal= m2 * 3
 
-  cemento= m2 / 2
+  cemento= m2 * 2
 
   alert("los metros cuadrados del terrenos son " + m2 + " y nesesita " + cal + " bolsas de cal como de " + cemento + " bolsas de cemento" ).toFixed(0);
 }
