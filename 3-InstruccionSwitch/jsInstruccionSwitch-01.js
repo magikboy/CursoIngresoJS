@@ -1,3 +1,4 @@
+//Bosco Mascaro Massimo Ariel Div X
 function mostrar()
 {
 	//tomo el mes
@@ -5,29 +6,27 @@ function mostrar()
 
 	mesDelAño=document.getElementById("txtIdMes").value;
 
-	
-	if(mesDelAño ="Enero" && mesDelAño !="Marzo" && mesDelAño !="Julio" && mesDelAño !="Diciembre")
+	switch (mesDelAño)
 	{
-		alert("que comiences bien el año!!!.")
+		case "Enero":
+			{
+				alert ("que comiences bien el año!!!.");
+				break;
+			}
+			case "Marzo":
+			{
+				alert ("a clases!!!.");
+				break;
+			}
+			case "Julio":
+			{
+				alert ("se vienen las vacaciones!!!.");
+				break;
+			}
+			case "Diciembre":
+			{
+				alert ("Felices fiestas!!!.");
+				break;
+			}		
 	}
-
-	else
-	{
-		if(mesDelAño ="Marzo" && mesDelAño !="Julio" && mesDelAño !="Diciembre")
-	{
-		alert("a clases..");
-	}
-
-	    else 
-		{
-          if(mesDelAño = "Julio" )
-		  {
-			alert("se vienen las vacaciones!!!.")
-		  }
-		}
-	}
-
-
-
-
 }//FIN DE LA FUNCIÓN
