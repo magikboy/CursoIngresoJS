@@ -4,36 +4,7 @@ function mostrar()
 	let horaDelDia =txtIdHora.value;
 	
 	horaDelDia=parseInt(document.getElementById("txtIdHora").value);
-
-	if (horaDelDia >= 7 && horaDelDia <= 11)
-	{
-		alert ("es de mañana");
-	}
-	if(horaDelDia >= 12 && horaDelDia <= 19 )
-	{
-	alert("es de tarde");
-	}
-	else
-	{
-		if(horaDelDia >= 20 && horaDelDia <= 24 )
-	{
-		alert("es de noche");
-	}
-
-	    else 
-		{
-         if(horaDelDia >= 1 && horaDelDia <= 6)
-		 {
-			alert("es de noche")
-		 }
-		}
-		if(horaDelDia >= 25)
-		{
-			alert ("hora no valida")
-		}
-	}
-	//forma alterna
-	/*switch(horaDelDia)
+	switch(horaDelDia)
 	{
 		case(7):
 		case(8):
@@ -73,6 +44,39 @@ function mostrar()
 			}
 	    default:
 			alert("no es una hora valida")
-	}*/
+	}
+
+	//forma alterna
+/*
+	if (horaDelDia >= 7 && horaDelDia <= 11)
+	{
+		alert ("es de mañana");
+	}
+	if(horaDelDia >= 12 && horaDelDia <= 19 )
+	{
+	alert("es de tarde");
+	}
+	else
+	{
+		if(horaDelDia >= 20 && horaDelDia <= 24 )
+	{
+		alert("es de noche");
+	}
+
+	    else 
+		{
+         if(horaDelDia >= 1 && horaDelDia <= 6)
+		 {
+			alert("es de noche")
+		 }
+		}
+		if(horaDelDia >= 25)
+		{
+			alert ("hora no valida")
+		}
+	}
+*/
+	
+    
 
 }//FIN DE LA FUNCIÓN
