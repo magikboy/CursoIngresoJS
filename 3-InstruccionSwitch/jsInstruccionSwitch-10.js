@@ -2,21 +2,22 @@
 function mostrar()
 {
 	//declaro las variables
-	let destino
-	let estacion 
+	let destino;
+	let estacion;
+	let mensaje = "se viaja";
 
 	//tomo su id del html
-	estacion = document.getElementById("txtIdEstacion").value
-	destino = document.getElementById("txtIdDestino").value
+	estacion = document.getElementById("txtIdEstacion").value;
+	destino = document.getElementById("txtIdDestino").value;
 
 	switch(estacion)
 	{
 		case "Invierno":
 			if (destino == "Bariloche")
 			{
-				alert("se viaja");
+				mensaje;
 			}
-			else 
+		    else 
 			{
 				alert("no se viaja");
 			}
@@ -24,7 +25,7 @@ function mostrar()
 		case "Verano":
 			if (destino == "Mar del plata" || destino == "Cataratas")
 			{
-				alert("se viaja");
+				mensaje;
 			}
 			else 
 			{
@@ -38,14 +39,12 @@ function mostrar()
 			}
 			else 
 			{
-				alert("se viaja");
+				mensaje;
 			}
 			break
 		case "Otoño":	
-			if (destino == "Cordoba" || destino == "Cataratas" || destino == "Mar del plata" || destino == "Bariloche")
-			{
-				alert ("se viaja");
-			}
+			mensaje
 			break;
 	}
+	alert (mensaje);
 }//FIN DE LA FUNCIÓN
