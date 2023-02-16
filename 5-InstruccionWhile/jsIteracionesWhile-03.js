@@ -6,10 +6,10 @@ function mostrar()
 	let claveIngresada;
 	claveIngresada = prompt("ingrese la clave.");
 
-	while(claveIngresada == "utn750")
+	while(claveIngresada != "utn750")
 	{
-		alert ("su clave es correcta");
-		break
+		alert ("clave incorrecta \nla clave es : utn750");
+		claveIngresada = prompt("ingrese la clave.");
 	}
 	
 }//FIN DE LA FUNCIÓN
