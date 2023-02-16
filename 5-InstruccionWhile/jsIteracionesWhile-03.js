@@ -12,4 +12,10 @@ function mostrar()
 		claveIngresada = prompt("ingrese la clave.");
 	}
 	
+	/*do{
+		claveIngresada = prompt("ingrese la clave.");
+		
+	}
+	while(claveIngresada != "utn750");*/
+	
 }//FIN DE LA FUNCIÓN
