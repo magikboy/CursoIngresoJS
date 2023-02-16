@@ -10,9 +10,9 @@ function mostrar()
 
 	do
 	{
-		sexo=prompt("ingrese f ó m .");
+		sexo=prompt("ingrese F de femenino ó M de masculino.");
 	}
-	while(!(sexo == "f" || sexo == "m" )); // para letras poner "" comillas
+	while(!(sexo == "F" || sexo == "M" )); // para letras poner "" comillas
 
 	document.getElementById("txtIdSexo").value=sexo;
 	
