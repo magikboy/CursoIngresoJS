@@ -4,10 +4,30 @@ Al presionar el botón pedir un sexo
 //Bosco Mascaro Massimo Ariel Div X
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	let sexo
 
+	sexo=parseInt(sexo);
 
+	do
+	{
+		sexo=prompt("ingrese f ó m .");
+	}
+	while(!(sexo == "f" || sexo == "m" )); // para letras poner "" comillas
 
-	txtIdSexo.value=sexoIngresado;
+	document.getElementById("txtIdSexo").value=sexo;
+	
+	
 }//FIN DE LA FUNCIÓN
+
+
+/*let sexo;
+
+	sexo = prompt("ingrese f ó m .");
+
+	txtIdSexo.value=sexo;
+
+	while(!(sexo == f || sexo == m))
+	{
+		sexo =prompt("ingrese f ó m .");
+	}
+	document.getElementById("txtIdSexo").value=sexo; */
