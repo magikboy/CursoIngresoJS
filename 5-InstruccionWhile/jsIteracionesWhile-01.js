@@ -8,5 +8,6 @@ function mostrar()
 	{
 		alert(i)
 		i ++ ;
+		//i = i + 1; contador	
 	}
 }//FIN DE LA FUNCIÓN

@@ -3,13 +3,13 @@ al presionar el botón
 pedir un número entre 0 y 9 inclusive.*/
 function mostrar()
 {
-	var numeroIngresado;
-	numeroIngresado = prompt("ingrese un número entre 0 y 9.");
+	let numeroIngresado;
+	numeroIngresado = prompt("ingrese un número entre 0 y 9.");	
 	let i = 0
 	
-	while(i >= 0 && i <= 9)
+	while(i >= 0 || i <= 9)
 	{
-		alert(numeroIngresado);
-		br
+		document.getElementById("txtIdNumero").value=numeroIngresado;
+		break;	
 	}
 }//FIN DE LA FUNCIÓN
