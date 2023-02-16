@@ -3,11 +3,11 @@ con números ASCENDENTE, desde el 1 al 10.*/
 //Bosco Mascaro Massimo Ariel Div X
 function mostrar()
 {
-	let i = 1
-	while(i <= 10)
+	let i = 0
+	while(i < 10)
 	{
-		alert(i)
 		i ++ ;
 		//i = i + 1; contador	
+		alert(i)
 	}
 }//FIN DE LA FUNCIÓN
