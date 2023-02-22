@@ -14,8 +14,6 @@ function mostrar()
 	multiplicacionNegativos=1;
 	seguir='si';
 
-
-
 	while(seguir !='no')
     {
         numeroIngresado=parseInt(prompt("Ingrese un número"));
