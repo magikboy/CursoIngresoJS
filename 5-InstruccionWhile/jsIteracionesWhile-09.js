@@ -9,18 +9,18 @@ function mostrar()
 	let numeroMaximo;
 	let numeroMinimo;
 	let banderaDelPrimero;
-	banderaDelPrimero=0;
+	banderaDelPrimero=false;
 	seguir='si';
 	
 	while(seguir=='si')
 	{
 		numeroIngresado=prompt("Ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
-		if(banderaDelPrimero==0)
+		if(banderaDelPrimero==false)
 		{
 			numeroMaximo=numeroIngresado;
 			numeroMinimo=numeroIngresado;
-			banderaDelPrimero=1;
+			banderaDelPrimero=true;
 		}
 		else
 		{
