@@ -3,24 +3,24 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 mostrar el número máximo y el número mínimo ingresado.*/
 //Bosco Mascaro Massimo Ariel Div X
 function mostrar()
-{	// declarar variables
+{
 	let numeroIngresado;
-	let contador;
 	let seguir;
 	let numeroMaximo;
 	let numeroMinimo;
-	contador=0;
+	let banderaDelPrimero;
+	banderaDelPrimero=0;
 	seguir='si';
-	numeroMaximo=0;
-	numeroMinimo=0;
-    // recorrer el array
-	while(seguir !='no')
+	
+	while(seguir=='si')
 	{
-		numeroIngresado=parseInt(prompt("Ingrese un número"));
-		if(contador==0)
+		numeroIngresado=prompt("Ingrese un numero");
+		numeroIngresado=parseInt(numeroIngresado);
+		if(banderaDelPrimero==0)
 		{
 			numeroMaximo=numeroIngresado;
 			numeroMinimo=numeroIngresado;
+			banderaDelPrimero=1;
 		}
 		else
 		{
@@ -33,8 +33,7 @@ function mostrar()
 				numeroMinimo=numeroIngresado;
 			}
 		}
-		contador++;
-		seguir=prompt("¿Desea continuar?");
+		seguir=prompt("Quiere ingresar otro numero?");
 	}
 	document.getElementById("txtIdMaximo").value=numeroMaximo;
 	document.getElementById("txtIdMinimo").value=numeroMinimo;
