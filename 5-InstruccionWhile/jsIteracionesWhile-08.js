@@ -14,23 +14,22 @@ function mostrar()
 	multiplicacionNegativos=1;
 	seguir='si';
 
-	while(seguir !='no')
+    while(seguir=='si')
     {
-        numeroIngresado=parseInt(prompt("Ingrese un número"));
+        numeroIngresado=prompt("Ingrese un numero");
+        numeroIngresado=parseInt(numeroIngresado);
         if(numeroIngresado>0)
         {
             sumaPositivos=sumaPositivos+numeroIngresado;
-            contador++;
         }
         else
         {
-            multiplicacionNegativos=multiplicacionNegativos*(-1);
-            contador++;
+            multiplicacionNegativos=multiplicacionNegativos*numeroIngresado;
         }
-        seguir=prompt("¿Desea continuar?");
+        contador=contador+1;
+        seguir=prompt("Quiere ingresar otro numero?");
     }
-
-	document.getElementById("txtIdSuma").value=sumaPositivos;
-	document.getElementById("txtIdProducto").value=multiplicacionNegativos*contador;
-
+    document.getElementById("txtIdSuma").value=sumaPositivos;
+    document.getElementById("txtIdProducto").value=multiplicacionNegativos;
+    document.getElementById("txtIdContador").value=contador;
 }//FIN DE LA FUNCIÓN
