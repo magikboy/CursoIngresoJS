@@ -8,19 +8,19 @@ function mostrar()
 	let seguir;
 	let numeroMaximo;
 	let numeroMinimo;
-	let banderaDelPrimero;
-	banderaDelPrimero=false;
+	let bandera;
+	bandera=false;
 	seguir='si';
 	
 	while(seguir=='si')
 	{
 		numeroIngresado=prompt("Ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
-		if(banderaDelPrimero==false)
+		if(bandera==false)
 		{
 			numeroMaximo=numeroIngresado;
 			numeroMinimo=numeroIngresado;
-			banderaDelPrimero=true;
+			bandera=true;
 		}
 		else
 		{
