@@ -9,29 +9,21 @@ function mostrar()
 	let numeroMaximo;
 	let numeroMinimo;
 	let bandera;
-	bandera=false;
-	seguir='si';
+	bandera=true;;
+	seguir="si";
 	
-	while(seguir=='si')
+	while(seguir=="si")
 	{
-		numeroIngresado=prompt("Ingrese un numero");
-		numeroIngresado=parseInt(numeroIngresado);
-		if(bandera==false)
+		numeroIngresado=parseFloat(prompt("Ingrese un numero"));
+
+		if(bandera== true || numeroIngresado>numeroMaximo)
 		{
 			numeroMaximo=numeroIngresado;
-			numeroMinimo=numeroIngresado;
-			bandera=true;
 		}
-		else
+		else(bandera== true || numeroIngresado<numeroMinimo)
 		{
-			if(numeroIngresado>numeroMaximo)
-			{
-				numeroMaximo=numeroIngresado;
-			}
-			if(numeroIngresado<numeroMinimo)
-			{
-				numeroMinimo=numeroIngresado;
-			}
+			numeroMinimo=numeroIngresado;
+			bandera=false;
 		}
 		seguir=prompt("Quiere ingresar otro numero?");
 	}
