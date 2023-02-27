@@ -75,7 +75,10 @@ function mostrar()
 	document.write("4-Cantidad de negativos: "+contadorNegativos+"<br>");
 	document.write("5-Cantidad de ceros: "+contadorCeros+"<br>");
 	document.write("6-Cantidad de números pares: "+contadorPares+"<br>");
-	document.write("7-Promedio de positivos: "+promedioPositivos+"<br>");
+	if(!isNaN(promedioPositivos))
+	{
+		document.write("7-Promedio de positivos: "+promedioPositivos+"<br>");
+	}
 	if(!isNaN(promedioNegativos))
 	{
 		document.write("8-Promedios de negativos: "+promedioNegativos+"<br>");
