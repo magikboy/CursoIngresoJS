@@ -76,11 +76,9 @@ function mostrar()
 	document.write("5-Cantidad de ceros: "+contadorCeros+"<br>");
 	document.write("6-Cantidad de números pares: "+contadorPares+"<br>");
 	document.write("7-Promedio de positivos: "+promedioPositivos+"<br>");
-	document.write("8-Promedios de negativos: "+promedioNegativos+"<br>");
+	if(!isNaN(promedioNegativos))
+	{
+		document.write("8-Promedios de negativos: "+promedioNegativos+"<br>");
+	}
 	document.write("9-Diferencia entre positivos y negativos: "+diferenciaPositivosNegativos+"<br>");
-	document.write("<br>");
-	document.write("<br>");
-	document.write("<br>");
-	document.write("<br>");
-	document.write("<br>");
 }//FIN DE LA FUNCIÓN
